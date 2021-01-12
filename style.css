@@ -1,0 +1,83 @@
+body{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.row-flex{
+    display: -ms-flexbox;
+    display: flex;
+}
+#leftPanel{
+    flex: 0 0 auto;
+    padding: 15px;
+
+}
+#rightBlock{
+    flex: 1 1 auto;
+    text-align: center;
+}
+#leftPanel{
+    background-color: #ccc;
+    border-radius: 6px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+.formControl{
+    margin-bottom: 10px;
+    position: relative;
+}
+input[type="text"]{
+    outline: none;
+    border: 1px solid transparent;
+    padding: 4px 7px;
+    border-radius: 3px;
+    background-color: #eee;
+    width: 100%;
+    box-sizing: border-box;
+    transition: .4s;
+}
+input[type="text"].error{
+    border-color: red;
+}
+input[type="text"]:focus{
+    border: 1px solid rgb(137, 137, 255);
+}
+.btn{
+    border: none;
+    display: inline-block;
+    background-color: #eee;
+    color:#000;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: .4s;
+}
+.btn:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+#inputBlockList{
+    margin-bottom: 20px;
+}
+
+#listInput .itemInput .inputText{
+    width: auto;
+    flex: 1 1 auto;
+}
+#error_panel{
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color:red;
+    border: 1px dashed red;
+    display: none;
+    border-radius: 6px;
+    margin-top:20px;
+}
+#error_panel.show{
+    display: inline-block;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 7</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="row-flex">
+            <div id="leftPanel" class="col-flex">
+                <form id="settingsBlock">
+                    <h3>Параметры создания</h2>
+                    <div class="formControl">
+                        <label for="lengthBlock">Длина:</label>
+                        <input id="lengthBlock" name="lengthBlock" type="text">
+                    </div>
+                    <div class="formControl">
+                        <label for="heightBlock">Высота:</label>
+                        <input id="heightBlock" name="heightBlock" type="text">
+                    </div>
+                    <div class="formControl">
+                        <label for="colorBlock">Цвет:</label>
+                        <input id="colorBlock" name="colorBlock" type="text">
+                    </div>
+                    <div id="inputBlockList">
+                        <label>Текстовые строки:</label>
+                        <div id="listInput">
+                            <div class="itemInput formControl row-flex">
+                                <input class="inputText" type="text" name="inputText_1" placeholder="Введите текст">
+                            </div>
+                        </div>
+                        <div style="text-align: right;"><div id="btnAdd" class="btn" title="Добавить поле">+</div></div>
+                    </div>
+                    <div style="text-align: center;"><button type="submit" class="btn">Создать</button></div>
+                </form>
+            </div>
+            <div id="rightBlock" class="col-flex">
+                <div id="error_panel">Ошибка в исходных данных</div>
+            </div>
+        </div>
+    </body>
+</html>
